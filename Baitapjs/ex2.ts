@@ -10,4 +10,4 @@ function bai2() {
 
   }
   
-  export default  bai2;
+ bai2();

@@ -3,3 +3,4 @@ export default function camelize(str:string ){
     
         return x;
 }
+console.log("bai 8   /output ::", camelize("haha-haha"));

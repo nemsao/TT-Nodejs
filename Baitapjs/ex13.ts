@@ -7,3 +7,4 @@ export default function checkperfnumber(num:number){
    if(sum===num*2)    { return "Là số hoàn hảo"}else{return "không phải số hoàn hảo" }
    
 }
+console.log("bai 13  /output ::",checkperfnumber(6));
