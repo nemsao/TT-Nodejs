@@ -4,8 +4,8 @@ import fiterRange from './ex4'
 import Sortedcopy  from './ex6'
 import getMaxSubSum  from './ex7'
 import camelize  from './ex8'
-import { user ,sortByAge,AgeByAverage}  from './ex9'
-
+import { sortByAge,AgeByAverage}  from './ex9'
+import checkperfnumber  from './ex13'
 
 
 
@@ -21,9 +21,9 @@ function  ThisIsMain(): void {
      console.log("bai 8   /output ::", camelize("haha-haha"));
 
 
-     console.log("bai 9   /output ::", sortByAge([{name:"nam",age:11},{name:"hai",age:1},{name:"cuong",age:33}]));
+     console.log("bai 9   /output :: ", sortByAge([{name:"nam",age:11},{name:"hai",age:1},{name:"cuong",age:33}]));
      console.log("bai 11  /output ::",AgeByAverage([{name:"nam",age:11},{name:"hai",age:1},{name:"cuong",age:33}]));
-
+     console.log("bai 13  /output ::",checkperfnumber(6));
 }
 ThisIsMain()
 
