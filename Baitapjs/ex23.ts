@@ -1,10 +1,4 @@
 
-
-let i=1;
-let n2:number=9981283
-while(n2>1 ){
-       console.log((n2% 10))
-       n2=Math.floor( n2/10)
-       i+=1
-
-}
+const n2: number = 9981283;
+const st2r=n2.toString();
+console.log(str.length)

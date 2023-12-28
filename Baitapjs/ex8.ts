@@ -1,6 +1,8 @@
-export default function camelize(str:string ){
-    var x= str.split('-').map((s,i)=>{ s=s.charAt(0).toUpperCase()+s.slice(1) ;return s;  }).join('');
-    
-        return x;
+export default function camelize(str: string) {
+  
+  const x=str.replace(/-([a-z])/g,function (ma,letter){
+    return letter.toUpperCase()
+  })
+  return x;
 }
 console.log("bai 8   /output ::", camelize("haha-haha"));

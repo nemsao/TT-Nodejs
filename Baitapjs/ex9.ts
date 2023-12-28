@@ -1,24 +1,10 @@
- class user{
-    name=""
-    age=0
-    public constructor( name:string="không tên " , age:number = 0){
-        this.name=name
-        this.age=age
-    }
+let john={name:"john",age:32}
+let marry={name:"marry",age:12}
+let pete={name:"pete",age:22}
 
-   
-}
+let users=[john,marry,pete]
 
-function sortByAge(users: user[] ){
-    return (users.sort((a,b)=>{return a.age-b.age}))
-}
- 
-export default function AgeByAverage(users: user[] ){
-    
-    var sum=users.reduce((total,user)=>{return  total+=user.age  },0)
-    return sum/users.length
 
- 
-    
- }
-export  {user,sortByAge,AgeByAverage}
+let name_arr=users.map((e)=>{return e.name })
+
+console.log(name_arr)
