@@ -7,18 +7,18 @@ class user {
   }
 }
 
-function sortByAge(users: user[]) {
+const sortByAge = (users: user[]): user[] => {
   return users.sort((a, b) => {
     return a.age - b.age;
   });
-}
+};
 
-export default function AgeByAverage(users: user[]) {
+const AgeByAverage = (users: user[]): number => {
   var sum = users.reduce((total, user) => {
     return (total += user.age);
   }, 0);
   return sum / users.length;
-}
+};
 console.log(
   "bai 11  /output ::",
   AgeByAverage([

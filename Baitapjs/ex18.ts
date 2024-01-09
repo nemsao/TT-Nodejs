@@ -1,4 +1,3 @@
-const n = 333331;
-const str=  n.toString()
-
+const n = 3333312;
+const str = n.toString();
 console.log(str.length);

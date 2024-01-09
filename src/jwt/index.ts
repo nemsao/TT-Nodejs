@@ -16,7 +16,7 @@ route_jwt.use("/get-token", (req: Request, res: Response, next) => {
   if (req.header["authentication"]) {
     //@ts-ignore
     const { jsontoken } = req.header["authentication"];
-    res.status(200).json({ status: "success",data:jsontoken });
+    res.status(200).json({ status: "success", data: jsontoken });
   } else res.status(500).json({ status: "error", message: "no session found" });
 });
 

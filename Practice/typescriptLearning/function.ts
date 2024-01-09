@@ -9,10 +9,8 @@ const myfucnAdd = function (x: number, y: number) {
 //Optional Parameter
 
 function add2(x: number, y: number, c?: number): number {
-  if (c) {
-    return x + y + c;
-  }
-  return x + y;
+  const isThereEmpty = c || 0;
+  return x + y + isThereEmpty;
 }
 console.log(add2(1, 2));
 console.log(add2(1, 2, 3));
